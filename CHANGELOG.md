@@ -1,5 +1,25 @@
 # BAKUON · Notes de version
 
+## 2.4 · 28 octobre 2026 · Plus grand, plus beau, plus vivant
+
+- **Combiné agrandi.** Le compte-tours prend toute la hauteur et les six manos sont bien plus gros (environ 60 % au format de la Tesla). Ils sont disposés en arc autour du compte-tours.
+- **Nouveau combiné USA.** Cadrans crème à chiffres noirs dans des cuvettes chromées, aiguilles rouges, panneau en aluminium bouchonné, bandeau en cuir surpiqué et gros voyant de passage de rapport. Il ne ressemble plus du tout à EURO.
+- **EURO plus lumineux.** Cadrans anthracite éclairés, chiffres blancs plus grands, zone rouge lumineuse, panneau en carbone verni, décor de col alpin au soleil couchant.
+- **MONO refait.** Un vrai volant : corps en carbone, poignées caoutchouc, molettes TC, BB, ENG et DIFF, écran central en couleurs, petits écrans pour les manos, et un décor de circuit au crépuscule.
+- **Commandes à gauche.** START, les modes, les pédales et le panneau GPS sont maintenant du côté du conducteur, le garage passe à droite. Sur téléphone, les commandes passent au-dessus du garage.
+- **Mode Route moins extrême.** Les rapports tiennent le moteur dans une plage de croisière. Pour un moteur qui monte à 8 000 tr/min, Caractère au milieu : de 2 500 à 3 500 tr/min en ville, de 3 000 à 4 000 sur route, et jusqu'à environ 5 800 sur une accélération franche. Plus d'allers-retours entre deux rapports.
+- **Caractère bien plus marqué.** Sage passe tôt et reste calme. Spectacle monte près du rupteur, rétrograde fort et fait claquer l'échappement. Le réglage par défaut est au milieu.
+- **Monoplaces : vrais passages de course.** Montée de rapport avec une coupure d'allumage brève, gros coup de gaz automatique à chaque rétrogradage avec crépitement, claquement de boîte séquentielle, et rafale de rétrogradages au freinage (de 6e en 1re en moins de 2 secondes).
+- **Des moteurs plus différents.** Chaque son est retravaillé d'après les particularités réelles du moteur, et vérifié par mesure pour que deux moteurs d'une même page ne se ressemblent plus :
+  - le V10 culbuté a son allumage irrégulier « de camion » ;
+  - le 5 cylindres a son glouglou ;
+  - le rotatif est plus rauque ;
+  - le Turbo rallye est plus grave et plus rugueux que le Turbo drift, plus aigu et plus nerveux ;
+  - le Biturbo 4x4 est plus métallique que le Biturbo séquentiel, plus rond et plus grave ;
+  - le V8 double arbre est plus lisse et plus aigu que le V8 culbuté ;
+  - le V12 de GT est plus soyeux, le V10 de supercar plus hurleur ;
+  - l'Atmo 9 000 tours a son sifflement de distribution.
+
 ## 2.3 · 28 octobre 2026 · Le même écran dans les trois modes
 
 - Un bandeau orange « Prudence » reste affiché en haut, dans tous les modes : ne rien régler en roulant, garder un volume qui laisse entendre la route, et le son suit le GPS avec un peu de retard.
