@@ -14,7 +14,7 @@
 
 ## Ce que ça fait
 
-- **Quatre pages, quatre ambiances.** Tokyo au néon, col de montagne au crépuscule, route du désert, circuit de nuit. Chaque page a son enseigne, son compte-tours et ses miniatures, avec une transition animée entre les pages. Le même écran dans les trois modes : bandeau de prudence, compte-tours, garage et commandes.
+- **Quatre pages, quatre ambiances.** Tokyo au néon, col de montagne au crépuscule, route du désert, circuit de nuit. Chaque page a son enseigne, son compte-tours et ses miniatures, avec une transition animée entre les pages. Le même écran dans les trois modes : bandeau de prudence, combiné (compte-tours entouré de six manos : turbo, huile, eau, échappement, richesse), garage et commandes.
 - **Synthèse physique du son.** Explosions cylindre par cylindre dans l'ordre d'allumage réel, collecteurs et lignes d'échappement simulés, turbo, compresseur, flutter, blow-off, retours de flamme, anti-lag, 2-step, distribution variable.
 - **Mode Route.** Régime et rapports suivent la vitesse GPS, avec une prédiction qui compense le retard du GPS. L'ambiance Ville, Route ou Auto choisit des rapports courts ou réels, et le caractère (de Sage à Spectacle) règle le surrégime et les rétrogradages quand tu accélères fort.
 - **Modes Piste et Démo** sans GPS, avec pédales à l'écran.
