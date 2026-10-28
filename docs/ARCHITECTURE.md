@@ -80,6 +80,6 @@ En mode Route, la vitesse vient du GPS. Le navigateur ne donne qu'environ un poi
 
 ## Qualité
 
-- `npm test` compile le synthétiseur puis lance 60 tests : simulation (démarrage, boîte, 2-step, turbo, compresseur, conduite en mode Route à partir de points GPS), suivi GPS (mesure, latence, absence d'à-coups), synthèse de la démo complète de chaque moteur (aucune valeur invalide, pas d'écrêtage, niveaux homogènes d'un moteur à l'autre), parité des textes français et anglais, noms de moteurs courts et aucune marque affichée.
+- `npm test` compile le synthétiseur puis lance 61 tests : simulation (démarrage, boîte, 2-step, turbo, compresseur, conduite en mode Route à partir de points GPS), suivi GPS (mesure, latence, absence d'à-coups), synthèse de la démo complète de chaque moteur (aucune valeur invalide, pas d'écrêtage, niveaux homogènes d'un moteur à l'autre), parité des textes français et anglais, noms de moteurs courts, et aucune marque ni série dans les textes, l'en-tête de la page et les documents publics.
 - `npm run build` vérifie aussi les types TypeScript (mode strict).
 - La publication passe par `scripts/publish.sh` : tests, construction protégée, puis envoi du site compilé dans le dépôt public, que GitHub Actions publie sur GitHub Pages.
