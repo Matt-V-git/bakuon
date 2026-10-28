@@ -2,7 +2,7 @@
 
 **Son moteur synthétisé en direct pour le navigateur de la Tesla.** 21 moteurs sur quatre pages (japonaises, européennes, américaines et monoplaces), qui suivent ta vitesse GPS. Aucun enregistrement : tout est calculé en temps réel.
 
-**Essayer :** [matt-v-git.github.io/bakuon](https://matt-v-git.github.io/bakuon/)
+**Essayer :** [matt-v-git.github.io/bakuon](https://matt-v-git.github.io/bakuon/) · **Notice d'utilisation :** [PDF d'une page](docs/notice-bakuon.pdf)
 
 ![Page JDM](docs/screenshots/jdm.jpg)
 
