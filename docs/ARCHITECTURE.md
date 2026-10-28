@@ -27,7 +27,7 @@ flowchart LR
 | `src/data` | Les 21 moteurs (rapports, régimes, turbo ou compresseur) et leurs réglages sonores, typés |
 | `src/sim` | Simulation de conduite (`sim.ts`) et suivi de vitesse GPS (`gps.ts`) |
 | `src/core` | Préférences persistées (`store.ts`) et contrôleur qui relie simulation, audio et GPS (`rig.ts`) |
-| `src/render` | Dessin canvas : décors (`scenes.ts`), compteurs et manos par page (`gauges.ts`), miniatures SVG (`art.ts`) |
+| `src/render` | Dessin canvas : décors (`scenes.ts`), compteurs par page (`gauges.ts`), miniatures SVG (`art.ts`) |
 | `src/ui` | Composants React : scène, barre du haut, combiné, commandes, bande des moteurs, atelier, avertissement |
 | `tests` | Tests Vitest : simulation, GPS, synthèse audio, textes |
 
@@ -59,8 +59,8 @@ En mode Route, la vitesse vient du GPS. Le navigateur ne donne qu'environ un poi
 ## L'affichage
 
 - **Une scène à taille fixe mise à l'échelle.** L'interface est dessinée pour trois formats (1600 × 900, 1280 × 960 pour le navigateur Tesla à côté de la carte, 800 × 1600 pour les téléphones) puis mise à l'échelle de la fenêtre. Rien ne défile, et les cadres gardent la même taille et la même place sur les quatre pages : seuls les couleurs, les polices et le dessin des compteurs changent.
-- **Un écran de conduite.** En mode Route, les pédales, la boîte et la bande des moteurs disparaissent : le compte-tours grandit et les commandes utiles en roulant (START, modes, changement de moteur) deviennent de gros boutons. Le garage s'ouvre alors dans une fenêtre.
-- **React pour la structure, canvas pour le temps réel.** Les composants React gèrent la mise en page, les réglages et le changement de page. Les compteurs, les manos et le décor sont dessinés dans des canvas par une boucle `requestAnimationFrame` qui lit directement l'état de la simulation et écrit les valeurs dans le DOM. Ces mises à jour à 60 images par seconde ne passent jamais par le rendu React.
+- **Le même écran dans les trois modes.** Un bandeau de prudence permanent, le compte-tours seul sur la première ligne, puis le garage à gauche et les commandes à droite. Seule la moitié droite des commandes change : pédales et boîte en Piste et en Démo, panneau GPS en Route. Les cadres et les boutons gardent la même taille d'un mode à l'autre.
+- **React pour la structure, canvas pour le temps réel.** Les composants React gèrent la mise en page, les réglages et le changement de page. Le compte-tours et le décor sont dessinés dans des canvas par une boucle `requestAnimationFrame` qui lit directement l'état de la simulation et écrit les valeurs dans le DOM. Ces mises à jour à 60 images par seconde ne passent jamais par le rendu React.
 - **Le décor suit l'interface.** La lune des pages EURO et USA se place dans l'espace libre de la barre du haut, mesuré sur la mise en page réelle, pour ne jamais passer derrière un bouton.
 - **Préférences** dans un petit store externe (`useSyncExternalStore`), sauvegardé dans `localStorage`.
 
