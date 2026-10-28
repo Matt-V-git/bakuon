@@ -52,11 +52,14 @@ Le module tourne dans un **AudioWorklet**, sur le fil audio du navigateur, pour 
 
 `BakuonSim` avance 50 fois par seconde : démarrage, ralenti, embrayage au départ, boîte automatique (avec réglage du style de conduite) ou manuelle, rupteur, 2-step, bridage de vitesse par page, montée et chute du turbo, compresseur proportionnel au régime.
 
+**Le mode Route.** Avec les vrais rapports, une Tesla reste en 2e jusqu'à 70 km/h et le régime ne fait que recopier la vitesse. La boîte de route travaille donc sur une vitesse « virtuelle » : environ le double de la vraie en ville, puis de moins en moins avec la vitesse (ambiance Auto), toujours croissante pour que le régime ne baisse jamais pendant une accélération. L'ambiance Ville garde des rapports courts partout, l'ambiance Route les vrais rapports. Comme le navigateur ne peut pas lire la pédale, l'accélération mesurée par le GPS sert de pédale : conduite cool, passages tôt ; accélération franche, rétrogradage d'un ou deux rapports et surrégime ; décélération, rétrogradages avec coup de gaz et retours de flamme. Le curseur Caractère (de Sage à Spectacle) dose tout cela. La vitesse affichée reste la vraie.
+
 En mode Route, la vitesse vient du GPS. Le navigateur ne donne qu'environ un point par seconde, avec du retard. `GpsTracker` estime donc l'accélération à partir des derniers points, projette la vitesse jusqu'à l'instant présent (retard compris) et la suit avec un lissage court de 0,18 s. Sur un flux à 1 Hz avec 0,4 s de latence, l'erreur moyenne de vitesse passe d'environ 2 m/s (première version) à moins de 1 m/s.
 
 ## L'affichage
 
 - **Une scène à taille fixe mise à l'échelle.** L'interface est dessinée pour trois formats (1600 × 900, 1280 × 960 pour le navigateur Tesla à côté de la carte, 800 × 1600 pour les téléphones) puis mise à l'échelle de la fenêtre. Rien ne défile, et les cadres gardent la même taille et la même place sur les quatre pages : seuls les couleurs, les polices et le dessin des compteurs changent.
+- **Un écran de conduite.** En mode Route, les pédales, la boîte et la bande des moteurs disparaissent : le compte-tours grandit et les commandes utiles en roulant (START, modes, changement de moteur) deviennent de gros boutons. Le garage s'ouvre alors dans une fenêtre.
 - **React pour la structure, canvas pour le temps réel.** Les composants React gèrent la mise en page, les réglages et le changement de page. Les compteurs, les manos et le décor sont dessinés dans des canvas par une boucle `requestAnimationFrame` qui lit directement l'état de la simulation et écrit les valeurs dans le DOM. Ces mises à jour à 60 images par seconde ne passent jamais par le rendu React.
 - **Le décor suit l'interface.** La lune des pages EURO et USA se place dans l'espace libre de la barre du haut, mesuré sur la mise en page réelle, pour ne jamais passer derrière un bouton.
 - **Préférences** dans un petit store externe (`useSyncExternalStore`), sauvegardé dans `localStorage`.
@@ -77,6 +80,6 @@ En mode Route, la vitesse vient du GPS. Le navigateur ne donne qu'environ un poi
 
 ## Qualité
 
-- `npm test` compile le synthétiseur puis lance 55 tests : simulation (démarrage, boîte, 2-step, turbo, compresseur), suivi GPS (mesure, latence, absence d'à-coups), synthèse de la démo complète de chaque moteur (aucune valeur invalide, pas d'écrêtage, niveaux homogènes d'un moteur à l'autre) et parité des textes français et anglais.
+- `npm test` compile le synthétiseur puis lance 60 tests : simulation (démarrage, boîte, 2-step, turbo, compresseur, conduite en mode Route à partir de points GPS), suivi GPS (mesure, latence, absence d'à-coups), synthèse de la démo complète de chaque moteur (aucune valeur invalide, pas d'écrêtage, niveaux homogènes d'un moteur à l'autre), parité des textes français et anglais, noms de moteurs courts et aucune marque affichée.
 - `npm run build` vérifie aussi les types TypeScript (mode strict).
 - La publication passe par `scripts/publish.sh` : tests, construction protégée, puis envoi du site compilé dans le dépôt public, que GitHub Actions publie sur GitHub Pages.

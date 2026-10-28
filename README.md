@@ -4,17 +4,19 @@
 
 **Essayer :** [matt-v-git.github.io/bakuon](https://matt-v-git.github.io/bakuon/) · **Notice d'utilisation :** [PDF d'une page](docs/notice-bakuon.pdf)
 
-![Page JDM](docs/screenshots/jdm.jpg)
+![Écran de conduite, mode Route](docs/screenshots/route.jpg)
 
-| Européennes | Américaines | Monoplaces |
-| --- | --- | --- |
-| ![Page européenne](docs/screenshots/euro.jpg) | ![Page américaine](docs/screenshots/usa.jpg) | ![Page monoplaces](docs/screenshots/mono.jpg) |
+| Japonaises | Européennes |
+| --- | --- |
+| ![Page japonaise](docs/screenshots/jdm.jpg) | ![Page européenne](docs/screenshots/euro.jpg) |
+| **Américaines** | **Monoplaces** |
+| ![Page américaine](docs/screenshots/usa.jpg) | ![Page monoplaces](docs/screenshots/mono.jpg) |
 
 ## Ce que ça fait
 
 - **Quatre pages, quatre ambiances.** Tokyo au néon, col de montagne au crépuscule, route du désert, circuit de nuit. Chaque page a son enseigne, son compte-tours, ses manos et ses miniatures, avec une transition animée entre les pages.
 - **Synthèse physique du son.** Explosions cylindre par cylindre dans l'ordre d'allumage réel, collecteurs et lignes d'échappement simulés, turbo, compresseur, flutter, blow-off, retours de flamme, anti-lag, 2-step, distribution variable.
-- **Mode Route.** Régime et rapports suivent la vitesse GPS, avec une prédiction qui compense le retard du GPS.
+- **Mode Route.** Un écran de conduite épuré : régime et rapports suivent la vitesse GPS, avec une prédiction qui compense le retard du GPS. L'ambiance Ville, Route ou Auto choisit des rapports courts ou réels, et le caractère (de Sage à Spectacle) règle le surrégime et les rétrogradages quand tu accélères fort.
 - **Modes Piste et Démo** sans GPS, avec pédales à l'écran.
 - **Fait pour l'écran de la Tesla.** Tout tient dans la fenêtre sans défilement, son voicé pour les haut-parleurs de la voiture, interface en français ou en anglais.
 
@@ -22,8 +24,8 @@
 
 1. Voiture à l'arrêt, ouvre le navigateur sur [matt-v-git.github.io/bakuon](https://matt-v-git.github.io/bakuon/).
 2. Lis et valide l'avertissement de prudence, puis autorise la localisation.
-3. Choisis ta page (JDM, EURO, USA, MONO) et ton moteur, puis appuie sur **START**.
-4. Les réglages (volume, décharge turbo, retours de flamme, point d'écoute…) sont dans l'**Atelier**.
+3. Choisis ta page (JDM, EURO, USA, MONO) et ton moteur (**Changer de moteur**), puis appuie sur **START**.
+4. Les réglages (volume, ambiance, caractère, décharge turbo, retours de flamme, point d'écoute…) sont dans l'**Atelier**.
 
 Chaque page a son adresse : `#jdm`, `#euro`, `#usa`, `#mono`.
 
