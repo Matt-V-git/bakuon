@@ -1,5 +1,15 @@
 # BAKUON · Notes de version
 
+## 2.5 · 29 octobre 2026 · Nouveau volant des monoplaces
+
+- Le combiné des monoplaces devient un vrai volant de course, sans aucun logo : corps en carbone, poignées en caoutchouc, et les LED de passage de rapport intégrées dans un bandeau au-dessus de l'écran.
+- Un seul écran central regroupe ce qui compte pour le pilote :
+  - le rapport en très grand ;
+  - le régime et la vitesse ;
+  - la barre de régime ;
+  - les six mesures en deux colonnes : gaz, frein, pression d'huile, température d'huile, eau, pneus.
+- Tout autour : les boutons N, PC, P, +1, BB− et BB+, K1, K2, CHR et OIL, les molettes SOC, EB, BS et TRQ, et les sélecteurs rotatifs MODE, SAT et ENG.
+
 ## 2.4 · 28 octobre 2026 · Plus grand, plus beau, plus vivant
 
 - **Combiné agrandi.** Le compte-tours prend toute la hauteur et les six manos sont bien plus gros (environ 60 % au format de la Tesla). Ils sont disposés en arc autour du compte-tours.

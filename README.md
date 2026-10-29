@@ -14,7 +14,7 @@
 
 ## Ce que ça fait
 
-- **Quatre pages, quatre ambiances.** Tokyo au néon, col alpin au soleil couchant, route du désert, circuit au crépuscule. Chaque page a son enseigne, son combiné et ses miniatures : néon arc-en-ciel, cadrans éclairés sur carbone, cadrans crème sur aluminium bouchonné, volant de monoplace. Le même écran dans les trois modes : bandeau de prudence, combiné (compte-tours entouré de six manos : turbo, huile, eau, échappement, richesse), commandes à gauche et garage à droite.
+- **Quatre pages, quatre ambiances.** Tokyo au néon, col alpin au soleil couchant, route du désert, circuit au crépuscule. Chaque page a son enseigne, son combiné et ses miniatures : néon arc-en-ciel, cadrans éclairés sur carbone, cadrans crème sur aluminium bouchonné, volant de course avec écran central et LED intégrées. Le même écran dans les trois modes : bandeau de prudence, combiné (compte-tours entouré de six manos : turbo, huile, eau, échappement, richesse), commandes à gauche et garage à droite.
 - **Synthèse physique du son.** Explosions cylindre par cylindre dans l'ordre d'allumage réel, collecteurs et lignes d'échappement simulés, turbo, compresseur, flutter, blow-off, retours de flamme, anti-lag, 2-step, distribution variable.
 - **Mode Route.** Régime et rapports suivent la vitesse GPS, avec une prédiction qui compense le retard du GPS. L'ambiance Ville, Route ou Auto choisit des rapports courts ou réels, et le caractère (de Sage à Spectacle) règle le surrégime et les rétrogradages quand tu accélères fort.
 - **Modes Piste et Démo** sans GPS, avec pédales à l'écran.
